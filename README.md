@@ -12,7 +12,7 @@ TODO: Add links to `dat.gui` migratin docs.
   
   Monthly installs: X, Stars: X, Issues: X, Last updated: YYY.MM.DD
 
-- `tweakpane` - [Repo]([https://github.com/dataarts/dat.gui](https://github.com/cocopon/tweakpane), [Docs](https://tweakpane.github.io/docs/), [Demo](), [NPM]()
+- `tweakpane` - [Repo](https://github.com/cocopon/tweakpane), [Docs](https://tweakpane.github.io/docs/), [Demo](), [NPM]()
   
   Monthly installs: X, Stars: X, Issues: X, Last updated: YYY.MM.DD
 
@@ -56,3 +56,4 @@ TODO: Add a table with:
 - Fields / attributes list.
 - React library?
 - Some links to projects using it (e.g. https://www.vantajs.com/).
+- Dependencies / dependency-free.
