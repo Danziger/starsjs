@@ -11,7 +11,7 @@
 
 <p align="center">
     <a href="https://danziger.github.io/starsjs/" target="_blank">
-        <img src="./static/og-images/starsjs-banner-2.5x.png" width="512" />
+        <img src="./static/og-images/starsjs-banner-2.5x.png" />
     </a>
 </p>
 
