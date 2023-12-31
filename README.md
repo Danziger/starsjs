@@ -54,6 +54,7 @@
 - Animate "Starts.js" dot as a blinking star.
 - Consider implementing the settings panel with a few different libraries to see the differences with a real example.
 - Animate (fade-in) FPS meter.
+- Fix `ServiceWorker` error.
 
 <br />
 
