@@ -1,7 +1,7 @@
 import { IS_DESKTOP, HAS_CURSOR } from '../../constants/browser.constants';
 import { Galaxy } from '../galaxy/galaxy/galaxy.class';
 import { initializeLinks } from '../link/link.utils';
-
+import { sleep } from '../../utils/promises/promises.utils';
 
 export class App {
 
@@ -10,6 +10,8 @@ export class App {
   static C_HAS_ACTIVE_HOVER = 'app--hasActiveHover';
   static C_SHOW_FALLBACK = 'app--showFallback';
   static C_SHOW_SCREENSHOT = 'app--showScreenshot';
+  static C_LOADING = 'app--isLoading';
+  static C_INITIALIZED = 'app--isInitialized';
 
   // CSS selectors:
   static S_CANVAS = '.app__canvas';
@@ -26,6 +28,9 @@ export class App {
   prevDirection = 'down';
   deltaSum = 0;
   timeoutID = 0;
+
+  // State:
+  isInitialized = false;
 
   // Components:
   galaxy = null;
@@ -65,20 +70,35 @@ export class App {
     this.init();
   }
 
-  init() {
-    this.galaxy = new Galaxy(this.canvas);
-
+  async init() {
     if (HAS_CURSOR) {
       // TODO: Should the addition or removal of this be triggered from within Cursor?
       this.root.classList.add(App.C_HAS_ACTIVE_HOVER);
     }
+
+    await sleep(3000);
+
+    this.galaxy = new Galaxy(this.canvas);
+
+    this.isInitialized = true;
+
+    this.root.classList.add(App.C_LOADING);
+
+    await sleep(3000);
+
+    this.root.classList.add(App.C_INITIALIZED);
+    this.root.classList.remove(App.C_LOADING);
   }
 
   handleResize() {
+    if (!this.isInitialized) return;
+
     this.galaxy.resizeCanvas();
   }
 
   handleScroll() {
+    if (!this.isInitialized) return;
+
     window.clearTimeout(this.timeoutID);
 
     this.timeoutID = window.setTimeout(() => {

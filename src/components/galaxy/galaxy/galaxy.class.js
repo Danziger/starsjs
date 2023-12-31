@@ -73,8 +73,8 @@ export class Galaxy {
       clientHeight,
     } = document.documentElement;
 
-    canvas.width = this.width = clientWidth;
-    canvas.height = this.height = clientHeight;
+    canvas.width = this.width = window.innerWidth;
+    canvas.height = this.height = window.innerHeight;
 
     canvas.style.width = `${ this.width }px`;
     canvas.style.height = `${ this.height }px`;
