@@ -1,0 +1,32 @@
+:root {
+  --galaxyBackground: #060B16;
+  --unstyledLinkColor: red;
+  --linkColor: #FFF;
+  --linkHighlight: #0FF;
+}
+
+html {
+  // See https://developer.chrome.com/blog/300ms-tap-delay-gone-away/
+  touch-action: none;
+}
+
+a {
+  outline: none;
+  color: var(--unstyledLinkColor, red);
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+h1,
+h2 {
+  font-size: inherit;
+}

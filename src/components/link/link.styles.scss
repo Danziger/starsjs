@@ -1,0 +1,105 @@
+@import '../../styles/animations/break';
+
+.link {
+  $root: &;
+
+  &__root {
+    --x-1: 20%;
+    --w-1: 20%;
+    --x-2: 5%;
+    --w-2: 35%;
+    --x-3: 60%;
+    --w-3: 30%;
+
+    position: relative;
+    color: var(--linkColor, blue)
+  }
+
+  &__underline {
+    position: relative;
+    pointer-events: none;
+    box-shadow: inset 0 -2px var(--linkHighlight, blue);
+    display: inline-block;
+    line-height: 27px;
+
+    &--hidden {
+      box-shadow: none;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      display: none;
+    }
+
+    &::before {
+      bottom: 5px;
+      left: var(--x-1);
+      width: var(--w-1);
+      background: var(--linkHighlight, blue);
+    }
+
+    &::after {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: var(--linkHighlight, blue);
+    }
+
+    .app--hasActiveHover #{$root}__root:hover {
+      box-shadow: none;
+    }
+
+    .app--hasActiveHover #{$root}__root:hover>&::before,
+    .app--hasActiveHover #{$root}__root:hover>&::after {
+      display: block;
+      animation: break .5s;
+      animation-iteration-count: infinite;
+    }
+
+    .app--hasActiveFocus a:focus>& {
+      box-shadow: inset 0 -8px var(--linkHighlight, blue);
+    }
+  }
+
+  &__linkEffect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 9px;
+    overflow: hidden;
+    pointer-events: none;
+    display: none;
+    line-height: 27px;
+
+    .app--hasActiveHover #{$root}__root:hover>& {
+      display: block;
+      animation: break .75s;
+      animation-iteration-count: infinite;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+    }
+
+    &::before {
+      top: 2px;
+      left: var(--x-2);
+      width: var(--w-2);
+      background: var(--linkHighlight, blue);
+    }
+
+    &::after {
+      top: 7px;
+      left: var(--x-3);
+      width: var(--w-3);
+      background: var(--linkHighlight, blue);
+    }
+  }
+}
