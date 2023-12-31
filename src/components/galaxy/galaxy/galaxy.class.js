@@ -68,11 +68,6 @@ export class Galaxy {
 
     if (!canvas) return;
 
-    const {
-      clientWidth,
-      clientHeight,
-    } = document.documentElement;
-
     canvas.width = this.width = window.innerWidth;
     canvas.height = this.height = window.innerHeight;
 
