@@ -5,11 +5,6 @@
   --linkHighlight: #0FF;
 }
 
-html {
-  // See https://developer.chrome.com/blog/300ms-tap-delay-gone-away/
-  touch-action: none;
-}
-
 a {
   outline: none;
   color: var(--unstyledLinkColor, red);
