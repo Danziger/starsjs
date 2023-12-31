@@ -83,7 +83,7 @@ export class Galaxy {
 
     // Instantiate all stars:
     const maxDimension = Math.max(this.width, this.height);
-    const hypotenuse = Math.round(Math.sqrt(maxDimension * maxDimension + maxDimension * maxDimension));
+    const hypotenuse = Math.round(Math.sqrt(2 * (maxDimension ** 2)));
     const orbitRadiusRange = [0, hypotenuse / 2];
 
     for (let i = 0; i < this.maxStars; ++i) {

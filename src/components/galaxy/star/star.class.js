@@ -15,7 +15,11 @@ export class Star {
 
     if (!ctx) return null;
 
-    const radius = 100;
+    const { devicePixelRatio } = window;
+
+    const radius = 100 * devicePixelRatio;
+
+    // TODO: Using a smaller radius (e.g. 10) creates blurrier stars.
 
     canvas.width = radius * 2;
     canvas.height = radius * 2;
