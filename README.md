@@ -1,11 +1,65 @@
-# Stars.js
+<h1 align="center">GMZcodes</h1>
 
-✨ Generate a rotating galaxy in a canvas.
+<p align="center">
+    ✨ Generate a rotating galaxy in a canvas.
+</p><p align="center">
+    🚀 Check it out at <a href="https://danziger.github.io/starsjs/">https://danziger.github.io/starsjs/</a>!
+</p>
 
 <br />
 
 
-## Options (to be implemented)
+<p align="center">
+    <a href="https://danziger.github.io/starsjs/" target="_blank">
+        <img src="./static/og-images/starsjs-banner-2.5x.png" width="512" />
+    </a>
+</p>
+
+<br />
+
+
+Running It (Development)
+------------------------
+
+Take a look at `package.json`, the scripts are self-explanatory, but otherwise `npm install` and `npm start` work in `90%` of teh cases :D
+
+The project will be accessible at http://localhost:8080/.
+
+<br />
+
+
+Reporting a problem
+-------------------
+
+Don't hesitate to report any issue you find in this website/project by opening a new issue in this repository, but please make sure that problem hasn't been reported before by another user.
+
+<br />
+
+
+TODOs & Bug
+-----------
+
+- Update README header and attribution sections.
+
+- Add a footer with an attribution and a "HIRING?" label similar to the one in gmzcodes.com.
+
+- Make the star gradient proportional to `devicePixelRatio`.
+
+- Make `twinkle` proportional to the distance to the center (so that the effect is more noticeable on larger stars that are further away from the center).
+
+- Progressively highlight "Stars.js" letter as the animation loads.
+
+- Animate "Starts.js" dot as a blinking star.
+
+- Consider implementing the settings panel with a few different libraries to see the differences with a real example.
+
+- Animate (fade-in) FPS meter.
+
+<br />
+
+
+Options (to be implemented)
+---------------------------
 
 - Pattern:
     - Type: uniform, radial, linear
@@ -44,21 +98,8 @@
 <br />
 
 
-## TODO:
-
-- Update README header and attribution sections.
-- Add a footer with an attribution and a "HIRING?" label similar to the one in gmzcodes.com.
-- Make the star gradient proportional to `devicePixelRatio`.
-- Make `twinkle` proportional to the distance to the center (so that the effect is more noticeable on larger stars that are further away from the center).
-- Progressively highlight "Stars.js" letter as the animation loads.
-- Animate "Starts.js" dot as a blinking star.
-- Consider implementing the settings panel with a few different libraries to see the differences with a real example.
-- Animate (fade-in) FPS meter.
-
-<br />
-
-
-## Settings Panel
+Settings Panel
+--------------
 
 I've been considering different libraries to implement the settings panel available on Stars.js to play around with the settings above (once they get implemented), and I thought the comparison might be relevant for some other people, so here it is (still in draft, I'll be adding more info soon).
 
@@ -107,10 +148,53 @@ I've been considering different libraries to implement the settings panel availa
 
 ### Comparison:
 
-TODO: Add a table with:
+TODO: Add a table (maybe Airtable link) with:
 
 - `dat.guy` drop-in replacement?
 - Fields / attributes list.
 - React library?
 - Some links to projects using it (e.g. https://www.vantajs.com/).
 - Dependencies / dependency-free.
+
+<br />
+
+
+Some other sites I've built
+---------------------------
+
+- **[GMZCODES](https://gmzcodes.com/)**
+
+  👨‍💻 Dani Gamez's personal website PWA built using JavaScript, SCSS and HTML5.
+
+- **[Stylophone.js](https://danziger.github.io/stylophonejs/)**
+
+  🎹 The classic Stylophone, now in your phone and computer.
+
+- **[Key.js](https://keyjs.dev)**
+
+  ⌨ Press any key to get the JavaScript keyboard event event key, code, which, keyCode and more properties!
+
+- **[Slot.js](https://danziger.github.io/slotjs/)**
+
+  🎰 Circular slot machine mobile-first SPA built with JavaScript, CSS variables and Emojis!
+
+- **[Job.js](https://danziger.github.io/jobjs/)**
+
+  💼 Sharable image summaries for your open positions: Share your jobs as an image on LinkedIn and Instagram to get a visibility boost and more applicants!
+
+<br />
+
+
+Author
+------
+
+<img
+    src="https://s.gravatar.com/avatar/ff1de7f1a325c8005379a310949f7f23?s=128"
+    alt="Dani Gámez Franco"
+    align="left" />
+
+Dani Gámez Franco
+
+LinkedIn: https://www.linkedin.com/in/danigamezfranco/
+
+Stack Overflow: https://stackoverflow.com/users/3723993/danziger
