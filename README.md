@@ -2,11 +2,62 @@
 
 ✨ Generate a rotating galaxy in a canvas.
 
+<br />
+
+
+## Options (to be implemented)
+
+- Pattern:
+    - Type: uniform, radial, linear
+    - Direction: in, out, left, right, top, bottom, custom vector
+
+- Movement:
+    - Type: none, rotate, translate
+    - Direction: clockwise, counterclockwise, left, right, top, bottom, custom vector
+    - Speed
+
+- Style:
+    - Background color
+    - Foreground gradient
+    - Star color(s) / pattern(s)
+
+- Performance:
+    - Number of starts:
+        - Total (raw number)
+        - Density (stars per 100px^2)
+        - Grouped (stars per group, each group is a pre-rendered set of 2-10 similar or equal stars)
+
+- Mouse Interaction:
+    - Type: none, tilt, translate / drag
+    - Direction: away, towards
+    - Duration: permanent, spring effect
+    - Range / intensity
+    - Acceleration / transition function
+
+- Scroll Interaction:
+    - Type: none, tilt, translate / drag
+    - Direction: same, opposite
+    - Duration: permanent, spring effect
+    - Range / intensity
+    - Acceleration / transition function
+
+<br />
+
+
+## TODO:
+
+- Update README header and attribution sections.
+- Add a footer with an attribution and a "HIRING?" label similar to the one in gmzcodes.com.
+- Make the star gradient proportional to `devicePixelRatio`.
+
+<br />
+
+
 ## Settings Panel
 
-I've been considering different libraries to implement the settings panel available on Stars.js to play around with the settings, and I thought the comparison might be relevant for some othre people, so here it is (still in draft, I'll be adding more info soon).
+I've been considering different libraries to implement the settings panel available on Stars.js to play around with the settings above (once they get implemented), and I thought the comparison might be relevant for some other people, so here it is (still in draft, I'll be adding more info soon).
 
-TODO: Add links to `dat.gui` migratin docs.
+TODO: Add links to `dat.gui` migration docs.
 
 - `dat.gui` - [Repo](https://github.com/dataarts/dat.gui), [Docs](https://github.com/dataarts/dat.gui/blob/master/API.md), [Demo (not official)](https://sbcode.net/threejs/dat-gui/), [NPM](https://www.npmjs.com/package/dat.gui)
 
@@ -47,6 +98,9 @@ TODO: Add links to `dat.gui` migratin docs.
 - `paper-gui` - [Repo](https://github.com/google/paper-gui), [Docs](), [Demo](), [NPM]()
 
   Monthly installs: X, Stars: X, Issues: X, Last updated: YYY.MM.DD
+
+<br />
+
 
 ### Comparison:
 
