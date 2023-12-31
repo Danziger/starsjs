@@ -1,0 +1,65 @@
+.content {
+  $root: &;
+
+  &__root {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 600px;
+    padding: 16px;
+    box-sizing: border-box;
+
+    &+&::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 64px;
+      border-bottom: 2px solid rgba(255, 255, 255, .25);
+    }
+
+    @include above(xs) {
+      padding: 64px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    &Name {
+      display: block;
+      font-size: 36px;
+    }
+
+    &Description {
+      display: block;
+      margin-top: 24px;
+    }
+  }
+
+  &__p {
+    margin: 0;
+
+    &+& {
+      margin-top: 24px;
+    }
+  }
+
+  &__code {
+    background: rgba(255, 255, 255, .0625);
+    border-radius: 2px;
+    padding: 0 4px 2px;
+  }
+
+}

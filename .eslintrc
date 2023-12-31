@@ -1,0 +1,56 @@
+{
+    "parser": "@babel/eslint-parser",
+    "extends": "airbnb-base",
+    "plugins": [
+        "babel"
+    ],
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "rules":{
+        "no-use-before-define": ["warn"],
+        "import/prefer-default-export": [0],
+        "import/order": [2, {
+            "groups": ["builtin", "external", "parent", "sibling", "index"],
+            "newlines-between": "always"
+        }],
+        "prefer-template": [2],
+        "no-multiple-empty-lines": [2, {
+            "maxBOF": 0,
+            "max": 2,
+            "maxEOF": 1
+        }],
+        "quotes": [2, "single", { "allowTemplateLiterals": true }],
+        "padded-blocks": [2, {
+            "classes": "always"
+        }],
+        "template-curly-spacing": [2, "always"],
+        "max-len": [2, {
+            "code":  120,
+            "ignoreTemplateLiterals": true
+        }],
+        "lines-between-class-members": [2, "always", {
+            "exceptAfterSingleLine": true
+        }],
+        "prefer-destructuring": [2, {
+            "array": false
+        }],
+        "no-unused-expressions": [2, {
+            "allowShortCircuit": true,
+            "allowTernary": true
+        }],
+        "no-debugger": 1,
+        "no-return-assign": [2, "except-parens"],
+        "no-unused-vars": 1,
+        "no-multi-assign": 0,
+        "no-plusplus": 0,
+        "no-bitwise": 0,
+        "no-case-declarations": 0,
+        "indent": [2, 2, { "SwitchCase": 1 }],
+        "linebreak-style": [2, "windows"],
+        "object-curly-newline": [2, { "multiline": true, "consistent": true }],
+        "no-param-reassign": [2, { "props": false }],
+        "operator-linebreak": [2, "before"]
+    }
+}

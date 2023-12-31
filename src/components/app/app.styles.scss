@@ -1,0 +1,46 @@
+@import '../../styles/mixins/media-queries';
+
+.app {
+  $root: &;
+
+  &__root {
+    margin: 0 auto;
+    font-family: Kanit, sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--galaxyBackground, black);
+  }
+
+  &__canvas {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, 0);
+    background: var(--galaxyBackground, black);
+    z-index: -1;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .125);
+  }
+
+  &--showScreenshot #starsjs-banner {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;
+      height: 628px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, .125);
+    }
+  }
+
+}

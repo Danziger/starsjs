@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Galaxy.js \ Generate a rotating galaxy in a &lt;canvas&gt;.</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
+  <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>" />
+  <meta property="og:image" content="https://danziger.github.io/starsjs/og-images/starsjs-banner.png" />
+  <meta property="og:image:width" content="3000" />
+  <meta property="og:image:height" content="1570" />
+  <meta property="og:image:alt" content="<%= htmlWebpackPlugin.options.title %>" />
+  <meta property="og:url" content="https://danziger.github.io/starsjs/" />
+
+  <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>" />
+  <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.description %>" />
+  <meta name="twitter:image" content="https://danziger.github.io/starsjs/og-images/dani-gamez-franco-personal-website.png" />
+  <meta name="twitter:site" content="https://danziger.github.io/starsjs/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@gmzcodes" />
+
+  <meta name="title" content="<%= htmlWebpackPlugin.options.title %>" />
+  <meta name="description" content="<%= htmlWebpackPlugin.options.description %>" />
+  <meta name="author" content="Dani Gámez Franco" />
+  <meta name="keywords" content="Dani Gámez, Dani Gámez Franco, JS, TS, React, Next.js, AWS, Node.js, Rust, MongoDB, Web3, Python, Lead Full-Stack Engineer, Software Engineer, Frontend Architect, Computer Science Engineer, Entrepreneur, Remote Work Advocate" />
+  <meta name="screen-orientation" content="portrait">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+
+  <link rel="canonical" href="https://danziger.github.io/starsjs/" />
+
+
+  <!-- PWA -->
+
+  <meta name="theme-color" content="white" />
+  <link rel="manifest" href="manifest.json" />
+
+
+  <!-- ICONS -->
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+  <!--
+  <link rel="icon" href="logo/starsjs-t-e-16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="logo/starsjs-t-e-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="logo/starsjs-t-e-48.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="logo/starsjs-t-e-64.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="logo/starsjs-t-e-96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="logo/starsjs-t-e-128.png" type="image/png" sizes="128x128">
+  <link rel="icon" href="logo/starsjs-t-e-192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="logo/starsjs-t-e-256.png" type="image/png" sizes="256x256">
+  <link rel="icon" href="logo/starsjs-t-e-512.png" type="image/png" sizes="512x512">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="logo/starsjs-s-e-57.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="logo/starsjs-s-e-76.png">
+  <link rel="apple-touch-icon" sizes="112x112" href="logo/starsjs-s-e-112.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="logo/starsjs-s-e-120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="logo/starsjs-s-e-144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="logo/starsjs-s-e-152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="logo/starsjs-s-e-167.png">
+  <link rel="apple-touch-icon" sizes="176x176" href="logo/starsjs-s-e-176.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="logo/starsjs-s-e-180.png">
+  -->
+
+
+  <!-- ANALYTICS & SITE VERIFICATION -->
+
+  <meta name="google-site-verification" content="6Xa2p_VrmGSIQeZNe8Qd3qnNgE3hIlH2wIhjX0DQYJ4" />
+  <script defer data-domain="danziger.github.io/starsjs" src="https://plausible.io/js/plausible.js"></script>
+
+
+  <!-- FONTS -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Kanit:400&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit:400&display=swap" media="print" onload="this.media='all'" />
+
+</head>
+
+<body class="app__root">
+  <canvas class="app__canvas"></canvas>
+
+  <%- include ../content/content.template.ejs %>
+</body>
+
+</html>
