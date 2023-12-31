@@ -43,8 +43,6 @@ TODOs & Bug
 
 - Fix `ServiceWorker` error.
 
-- Make the star gradient proportional to `devicePixelRatio`.
-
 - Animate (fade-in) FPS meter.
 
 <br />
