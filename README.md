@@ -41,8 +41,6 @@ TODOs & Bug
 
 ### Bugs
 
-- Fix `ServiceWorker` error.
-
 - Animate (fade-in) FPS meter.
 
 <br />
