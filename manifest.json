@@ -1,6 +1,6 @@
 {
-  "name": "Galaxy.js",
-  "short_name": "Galaxy.js",
+  "name": "Stars.js",
+  "short_name": "Stars.js",
   "icons": [{
     "src": "logo/starsjs-t-e-16.png",
     "sizes": "16x16",
