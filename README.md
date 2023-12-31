@@ -50,6 +50,10 @@
 - Add a footer with an attribution and a "HIRING?" label similar to the one in gmzcodes.com.
 - Make the star gradient proportional to `devicePixelRatio`.
 - Make `twinkle` proportional to the distance to the center (so that the effect is more noticeable on larger stars that are further away from the center).
+- Progressively highlight "Stars.js" letter as the animation loads.
+- Animate "Starts.js" dot as a blinking star.
+- Consider implementing the settings panel with a few different libraries to see the differences with a real example.
+- Animate (fade-in) FPS meter.
 
 <br />
 
