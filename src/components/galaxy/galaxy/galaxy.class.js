@@ -14,7 +14,7 @@ export class Galaxy {
 
   height = 0;
 
-  // TODO (Dani): Maybe make it some kind of start density that depends on the screen size:
+  // TODO: Maybe make it some kind of start density that depends on the screen size:
   maxStars = 2500;
 
   stars = [];
@@ -32,7 +32,7 @@ export class Galaxy {
   stats = new Stats();
 
   constructor(canvas) {
-    // TODO (Dani): Configure maxStars
+    // TODO: Configure maxStars
 
     this.tick = this.tick.bind(this);
 
@@ -126,8 +126,8 @@ export class Galaxy {
     cancelAnimationFrame(this.requestAnimationFrameID);
 
     if (hideCanvas && this.canvas) {
-      // TODO (Dani): Configurable style OR class:
-      // TODO (Dani): Also revert when we start again:
+      // TODO: Configurable style OR class:
+      // TODO: Also revert when we start again:
       this.canvas.style.opacity = '0';
     }
   }

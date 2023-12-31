@@ -33,9 +33,9 @@ export class Star {
       radius,
     );
 
-    // TODO (Dani): Add solid square/circle option?
+    // TODO: Add solid square/circle option?
 
-    // TODO (Dani): Add glow hue option:
+    // TODO: Add glow hue option:
     /*
     radialGradient.addColorStop(0.025, 'rgba(255, 255, 255, 1)')
     radialGradient.addColorStop(0.1, 'rgba(255, 255, 255, 0.2)')
@@ -106,7 +106,7 @@ export class Star {
 
     // Physics:
     this.angle = randomAngle();
-    // TODO (Dani): This could be adjusted not to depend on the FPS:
+    // TODO: This could be adjusted not to depend on the FPS:
     this.angularSpeed = randomAngle() / (Star.FRAMES_PER_SECOND * secondsToFullRotation);
 
     const maxOrbitRadius = getRangeMax(orbitRadiusRange);
