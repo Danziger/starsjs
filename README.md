@@ -39,21 +39,40 @@ Don't hesitate to report any issue you find in this website/project by opening a
 TODOs & Bug
 -----------
 
-- Update README header and attribution sections.
+### Bugs
 
-- Add a footer with an attribution and a "HIRING?" label similar to the one in gmzcodes.com.
+- Fix `ServiceWorker` error.
 
 - Make the star gradient proportional to `devicePixelRatio`.
 
+- Animate (fade-in) FPS meter.
+
+<br />
+
+
+### Stars Generation & Options
+
+- Add a footer with an attribution and a "HIRING?" label similar to the one in [gmzcodes.com](https://gmzcodes.com).
+
 - Make `twinkle` proportional to the distance to the center (so that the effect is more noticeable on larger stars that are further away from the center).
+
+- Consider implementing the settings panel with a few different libraries to see the differences with a real example.
+
+<br />
+
+
+### Other Features
 
 - Progressively highlight "Stars.js" letter as the animation loads.
 
 - Animate "Starts.js" dot as a blinking star.
 
-- Consider implementing the settings panel with a few different libraries to see the differences with a real example.
+<br />
 
-- Animate (fade-in) FPS meter.
+
+### Tech Debt
+
+-
 
 <br />
 
