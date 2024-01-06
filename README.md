@@ -1,4 +1,4 @@
-<h1 align="center">GMZcodes</h1>
+<h1 align="center">Stars.js</h1>
 
 <p align="center">
     ✨ Generate a rotating galaxy in a canvas.
