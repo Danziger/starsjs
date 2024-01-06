@@ -36,12 +36,22 @@
     position: fixed;
     top: 0;
     left: 50%;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     transform: translate(-50%, 0);
     background: var(--galaxyBackground, black);
     z-index: -1;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, .125);
+  }
+
+  &__canvasDimensions {
+    position: fixed;
+    top: -200vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
   }
 
   &--showScreenshot #starsjs-banner {

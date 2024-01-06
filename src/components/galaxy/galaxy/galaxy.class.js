@@ -8,6 +8,8 @@ export class Galaxy {
 
   canvas = null;
 
+  canvasDimensionsElement = document.querySelector('.app__canvasDimensions');
+
   ctx = null;
 
   width = 0;
@@ -64,15 +66,24 @@ export class Galaxy {
   }
 
   updateDimensions() {
-    const { canvas } = this;
+    const { canvas, canvasDimensionsElement } = this;
 
-    if (!canvas) return;
+    if (!canvas) return false;
 
-    canvas.width = this.width = window.innerWidth;
-    canvas.height = this.height = window.innerHeight;
+    const {
+      width: prevWidth,
+      height: prevHeight,
+    } = this;
 
+    canvas.width = this.width = canvasDimensionsElement.clientWidth;
+    canvas.height = this.height = canvasDimensionsElement.clientHeight;
+
+    // Keep the size of the canvas unchanged when resizing the window (until this
+    // function is called again and it updates these values again):
     canvas.style.width = `${ this.width }px`;
     canvas.style.height = `${ this.height }px`;
+
+    return this.width !== prevWidth || this.ehgith !== prevHeight;
   }
 
   createStars() {
@@ -103,9 +114,12 @@ export class Galaxy {
     window.clearTimeout(this.resizeTimeoutID);
 
     this.resizeTimeoutID = window.setTimeout(() => {
+      const hasViewportResized = this.updateDimensions();
+
+      if (!hasViewportResized) return;
+
       if (!stopAnimation) this.stop();
 
-      this.updateDimensions();
       this.createStars();
       this.start();
     }, 250);
