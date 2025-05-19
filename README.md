@@ -48,7 +48,7 @@ TODOs & Bug
 
 ### Stars Generation & Options
 
-- Add a footer with an attribution and a "HIRING?" label similar to the one in [gmzcodes.com](https://gmzcodes.com).
+- Add a footer with an attribution.
 
 - Make `twinkle` proportional to the distance to the center (so that the effect is more noticeable on larger stars that are further away from the center).
 
